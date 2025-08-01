@@ -1,0 +1,16 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "date.parse",
+        "hl7.zsegment"
+    ],
+    "OtherDependencies": [
+        "PreManage.vmd"
+    ],
+    "timestamp": "1688571860",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

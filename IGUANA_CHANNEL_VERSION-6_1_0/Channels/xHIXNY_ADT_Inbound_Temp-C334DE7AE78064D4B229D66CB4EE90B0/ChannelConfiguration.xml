@@ -1,0 +1,33 @@
+<channel
+   name="xHIXNY_ADT_Inbound_Temp"
+   guid="C334DE7AE78064D4B229D66CB4EE90B0"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_file
+      output_dir="D:/Temp/HIXNY/"
+      write_to_separate_file="true"
+      output_single_filename="Healthtix_%i.hl7"
+      use_prepended_info_as_filename="false"
+      output_file_id_type="1"
+      output_filename_mask="HIXNY_%i.hl7"
+      temp_file_extension="tmp"
+      count_of_padding_digit="5"
+      sftp_authentication_method="user_password">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="39EA09ABF104B93CC94796D2BEF69D34"/>
+      </dequeue_list>
+   </to_file>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="c:/Iguana-6-0-7/autoack.vmd"
+      port="2056"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"
+      message_encoding="UTF-8"/>
+</channel>

@@ -1,0 +1,14 @@
+<channel
+   name="xPremanage_Process"
+   guid="90562F624F5F3E577A68617F3F7EE47B"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Premanage_Process-To-wVGPQIsbGpe729"
+      commit_id="3971ca207e3e0039f0838d8da322a03829dce06b"
+      commit_comment="fix date function T()">
+   </to_mapper>
+   <from_channel/>
+</channel>
