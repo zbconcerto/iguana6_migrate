@@ -305,8 +305,17 @@ function string:T(fmt)
    if self == '""' then
       return nil
    else
-      local t = dateparse.parse(self, fmt)
+      
+      -- Trim string to 14 characters if it's a compact datetime format
+      local cleaned = self:gsub('"', '')  -- remove quotes if any
+      if #cleaned >= 14 and cleaned:match("^%d+$") then
+         cleaned = cleaned:sub(1, 14)  -- keep only YYYYMMDDhhmmss
+      end
+
+      local t = dateparse.parse(cleaned, fmt)
       return t and os.date('%Y-%m-%d %H:%M:%S', t)
+      --local t = dateparse.parse(self, fmt)
+      --return t and os.date('%Y-%m-%d %H:%M:%S', t)
    end   
 end
  

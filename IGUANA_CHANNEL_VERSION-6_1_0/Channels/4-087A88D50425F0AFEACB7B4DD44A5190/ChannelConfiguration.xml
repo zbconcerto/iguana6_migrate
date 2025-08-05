@@ -1,0 +1,29 @@
+<channel
+   name="4"
+   guid="087A88D50425F0AFEACB7B4DD44A5190"
+   description=""
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_llp_listener
+      original_vmd_path="C:/Program Files/iNTERFACEWARE/Iguana/autoack.vmd"
+      ack_vmd_path="C:/Program Files/iNTERFACEWARE/Iguana/autoack.vmd"
+      port="2055"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

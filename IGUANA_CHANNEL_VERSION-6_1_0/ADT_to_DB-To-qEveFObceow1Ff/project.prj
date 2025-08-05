@@ -1,0 +1,16 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "date.parse",
+        "hl7.zsegment"
+    ],
+    "OtherDependencies": [
+        "Concerto_HL7_Inbound.vmd"
+    ],
+    "timestamp": "1750280070",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

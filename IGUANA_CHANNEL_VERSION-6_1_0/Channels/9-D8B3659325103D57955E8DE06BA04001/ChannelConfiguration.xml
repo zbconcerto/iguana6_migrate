@@ -1,0 +1,52 @@
+<channel
+   name="9"
+   guid="D8B3659325103D57955E8DE06BA04001"
+   description=""
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_llp_client
+      remote_host="63.224.151.24"
+      remote_port="14097"
+      wait_for_ack="true"
+      ack_timeout="10000"
+      ack_verification_type="0"
+      ack_vmd_path="c:/Iguana-6-0-7/ack_verify.vmd"
+      original_vmd_path=""
+      keep_vmd_updated="false"
+      retry_on_ack_timeout="true"
+      retry_on_ack_verification_failed="false"
+      unlimited_count_of_retry="false"
+      count_of_retry="5"
+      disconnect_between_retries="true"
+      ack_reconnect_interval="10000"
+      ack_error_handling="1"
+      persistent_connection="true"
+      connection_timeout="10000"
+      unlimited_max_count_of_reconnect="false"
+      max_count_of_reconnect="60"
+      connection_lost_reconnect_interval="10000">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="C7C7F28EBE5A0FE8D959E9A68E25B82A"/>
+      </dequeue_list>
+   </to_llp_client>
+   <from_database
+      original_vmd_path="D:\VMD\eCWHL7_S12.vmd"
+      db_api="ODBC - MS SQL Server"
+      datasource="IRVIGNSQL101_Outbound_Messages"
+      username="CONCERTO\svc_IguanaProd"
+      password="6F63646D384B5A69463148475A5159495A76646C66334A67706B2B78693179394F632F7548745668356B513D"
+      vmdfile="C:/Program Files/iNTERFACEWARE/Iguana/IguanaConfigurationRepo/Channels/eCW_SIU-390580922BA3B88EEF2F3DE1B70C95EF/assets/from_database.vmd"
+      poll_time="10000"
+      order_by_column="false"
+      keep_vmd_updated="false"
+      order_column_name="MESSAGE_ID"
+      order_descending="false"
+      database_reconnection_interval="10000"
+      maximum_database_reconnections="60"
+      unlimited_database_reconnections="false"
+      database_timeout_seconds="60">
+   </from_database>
+</channel>

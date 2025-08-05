@@ -1,0 +1,40 @@
+<channel
+   name="ADT_to_DB"
+   guid="2E5268008F4B07E09AAD10A4E4CE42BB"
+   description=""
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="ADT_to_DB-To-qEveFObceow1Ff"
+      commit_id="95d5d7e00a18b21a5a129e41f4d3b82b51ce1a05"
+      commit_comment="Fixing the issues  with recent cahnges">
+      <dequeue_list>
+         <dequeue
+            source_name="PreManage_ADT_Inbound"
+            dequeue_guid="1681361E7F0EC456E506E04C548A79D6"/>
+         <dequeue
+            source_name="PatientPing_ADT Inbound"
+            dequeue_guid="0AA36C65DC6825D07EBBF3D63C068C2E"/>
+         <dequeue
+            source_name="CliniSync_ADT Inbound"
+            dequeue_guid="41C2A1B9AAB0B1972940E486572C01C0"/>
+         <dequeue
+            source_name="Healthtix_ADT_Inbound"
+            dequeue_guid="A5FC7A42784649F69FD7A969138B56E2"/>
+         <dequeue
+            source_name="NCNotify_TLS_Inbound"
+            dequeue_guid="8E9D76B8135935A9AE68D55B13D4FD74"/>
+         <dequeue
+            source_name="HealtheLink_ADT_Inbound"
+            dequeue_guid="DD801BD7AE69D52FAF948AC2415E812D"/>
+         <dequeue
+            source_name="KHIE_ADT Inbound"
+            dequeue_guid="79E9D7C0266FACF1D025110AFD2B39E2"/>
+         <dequeue
+            source_name="HIXNY_ADT Inbound"
+            dequeue_guid="B508DD39FF0019166E9626427B84BDCF"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>
